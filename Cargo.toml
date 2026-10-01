@@ -1,0 +1,19 @@
+[package]
+name = "bilibili_fetcher"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+fantoccini = { version = "0.22", features = ["native-tls"] }
+tokio = { version = "1.53", features = ["full"] } # 异步运行时
+anyhow = "1.0"           # 简化错误处理
+reqwest = { version = "0.13", features = ["json", "stream"] } # 下载视频流
+serde_json = "1.0"       # 解析从页面提取的JSON数据
+futures-util = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+md5 = "0.7" # 用于计算签名哈希
+urlencoding = "2.1"
+regex = "1.13"
+axum = "0.8"
+tokio-stream = { version = "0.1", features = ["sync"] }
+uuid = { version = "1.26", features = ["v4"] }

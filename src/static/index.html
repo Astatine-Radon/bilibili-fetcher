@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B站视频下载器</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🎬 B站视频下载器</h1>
+      <p class="subtitle">粘贴链接，自动下载最高画质并合并音视频</p>
+    </header>
+
+    <form id="dl-form" class="card">
+      <label for="url">视频链接</label>
+      <div class="row">
+        <input type="text" id="url"
+               placeholder="https://www.bilibili.com/video/BV1j4411W7F7"
+               autocomplete="off" autofocus>
+        <button type="submit" id="submit-btn">开始下载</button>
+      </div>
+      <p class="hint">支持完整链接 / BV 号 / 含有 BV 号的任意文本</p>
+    </form>
+
+    <div id="tasks" class="tasks"></div>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

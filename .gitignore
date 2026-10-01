@@ -1,0 +1,6 @@
+/target
+/downloads
+/drivers/ffmpeg.exe
+/user_config.json
+.env
+*.log
